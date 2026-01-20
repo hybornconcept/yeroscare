@@ -5,7 +5,8 @@
 
 <button
 	onclick={toggleMode}
-	class="group relative flex h-8 w-14 items-center rounded-full bg-black p-1 transition-all duration-300 dark:bg-[#111] border border-white/10"
+	class="group relative flex h-8 w-14 items-center rounded-full p-1 transition-all duration-300 border border-white/10
+    {mode.current === 'light' ? 'bg-[#10b981]' : 'bg-black dark:bg-[#111]'}"
 	aria-label="Toggle theme"
 >
 	<!-- Slider Circle -->
